@@ -1,0 +1,67 @@
+.message {
+    display: grid;
+    grid-template-columns: 1fr 48px;
+    grid-template-rows: 1fr;
+    width: 50%;
+    height: 60px;
+    column-gap: 20px;
+    align-items: center;
+    align-content: center;
+    margin: 47px 0 0 auto;
+}
+
+.image {
+    grid-column: 2/3;
+    grid-row: 1;
+}
+
+.image img {
+    width: 48px;
+    height: 48px;
+}
+
+.text {
+    position: relative;
+    max-width: 100%;
+    height: 100%;
+    background: #06C;
+    border-radius: 10px;
+    border-bottom-right-radius: 0px;
+    box-shadow: 0px 3px 2px 0px rgba(29, 33, 38, 0.03);
+}
+
+.textWrapper {
+    padding: 13px;
+    text-align: right;
+}
+
+.text::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: -20px;
+    border-bottom: 20px solid #06C;
+    border-right: 20px solid transparent;
+    box-shadow: 0px 3px 2px 0px rgba(29, 33, 38, 0.03);
+}
+
+.name,
+.messageText {
+    color: #fff;
+    font: var(--fontStyleText);
+}
+
+.name {
+    font-weight: 600;
+}
+
+.messageText {
+    font-weight: 400;
+}
+
+.time {
+    grid-column: 2/3;
+    text-align: center;
+    color: #000;
+    font: var(--fontStyleTime);
+}

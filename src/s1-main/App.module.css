@@ -1,0 +1,26 @@
+:root {
+    --fontTextarea: normal 400 14px/40px Montserrat;
+    --fontStyleText: normal 16px/normal Montserrat;
+    --fontStyleTime: normal 600 10px/normal Montserrat;
+    --fontStyleTitle: normal 600 22px/normal Montserrat;
+}
+
+.App {
+    --header_height: 60px;
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 24px;
+}
+
+.hw {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.hwTitle {
+    margin: 131px 70px 0 70px;
+    color: #000;
+    font: var(--fontStyleTitle);
+}
