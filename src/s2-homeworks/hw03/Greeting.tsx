@@ -44,7 +44,7 @@ const Greeting: React.FC<GreetingPropsType> = (
                 </div>
                 <button id={'hw3-button'} onClick={addUser} className={s.button} disabled={!name.trim()}>add</button>
             </div>
-            {!error ? <div className={s.greeting}>Привет <span id={'hw3-last-user'}>{lastUserName}</span>!</div> : ''}
+            {!error && lastUserName ? <div className={s.greeting}>Привет <span id={'hw3-last-user'}>{lastUserName}</span>!</div> : ''}
         </div>
     )
 }
